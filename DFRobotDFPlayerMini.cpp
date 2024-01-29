@@ -107,7 +107,7 @@ bool DFRobotDFPlayerMini::begin(Stream &stream, bool isACK, bool doReset){
   
   if (doReset) {
     reset();
-    waitAvailable(2000);
+    waitAvailable(5000);
     delay(200);
   }
   else {
